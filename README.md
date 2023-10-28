@@ -1,4 +1,4 @@
-# Twitch-extention
+# Twitch-extension
 
 다기능 트위치 확장프로그램입니다.
 

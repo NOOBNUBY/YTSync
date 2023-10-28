@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Twitch-Auto-Reward",
+    "name": "Twitch-Extension",
     "version": "1.0",
-    "description": "Automatically accept Twitch's reward.",
+    "description": "This is an extension that provides a variety of twitch functions.",
 
     "icons": {
         "16": "img/16.png",
