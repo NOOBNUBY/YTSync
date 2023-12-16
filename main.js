@@ -1,11 +1,26 @@
-window.onload = () => {
-    let Reward = () => {
-        const btn = document.querySelector('.fEpwrH');
-        if (document.querySelector('.fEpwrH') !== null) {
-            console.log('리워드를 받았습니다.');
-            btn.click();
-        }
-    }
+function setPlaybackSpeed() {
+    if (window.location.pathname.startsWith("/watch")) {
+        const settingBtn = document.querySelector(".ytp-settings-button");
+        settingBtn.click();
 
-    setInterval(Reward, 1000);
+        setTimeout(function () {
+            const speedBtn = Array.from(
+                document.querySelectorAll(".ytp-menuitem")
+            ).find((el) => el.textContent.includes("재생 속도"));
+            speedBtn.click();
+
+            setTimeout(function () {
+                const speed2xBtn = Array.from(
+                    document.querySelectorAll(".ytp-menuitem")
+                ).find((el) => el.textContent.trim() === "2");
+                speed2xBtn.click();
+
+                setTimeout(function () {
+                    settingBtn.click();
+                }, 1);
+            }, 1);
+        }, 1);
+    }
 }
+
+window.onload = setPlaybackSpeed;
