@@ -1,6 +1,6 @@
 function setPlaybackSpeed() {
     if (window.location.pathname.startsWith("/watch")) {
-        if (document.querySelector(".yt-live-chat-header-renderer") !== null) {
+        if (document.querySelector(".ytp-live-badge") !== null) {
             const settingBtn = document.querySelector(".ytp-settings-button");
             settingBtn.click();
 
