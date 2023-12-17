@@ -18,6 +18,7 @@ function setPlaybackSpeed() {
 
                     setTimeout(function () {
                         settingBtn.click();
+                        console.log("set speed 2x");
                     }, 1);
                 }, 1);
             }, 1);
