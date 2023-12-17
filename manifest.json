@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "YTSync",
-    "version": "1.0.0",
-    "description": "유트브의 라이브 싱크를 맞춰주는 확장 프로그램입니다.",
+    "version": "1.0.1",
+    "description": "유트브 라이브의 싱크를 맞춰주는 확장 프로그램입니다.",
 
     "icons": {
         "16": "img/ytsync16.png",
